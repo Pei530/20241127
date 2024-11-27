@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 01;
+}
+
+.navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    color:rgb(126, 222, 147);
+    box-shadow: 0 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #dad9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-card{
+    width: 250px;
+    background: white;
+    /* border: 5px dashed tomato; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 12px;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.product-card:hover .product-image img{
+    transform: scale(1.05);
+}
+
+.product-info{
+    padding: 20px;
+}
+
+.product-name{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    /* overflow: hidden; */
+}
+
+.product-description{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.price-info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.current-price{
+    font-size: 22px;
+    font-weight:bold ;
+    color:#2ecc71
+}
+
+.original-price{
+    font-size: 14px;
+    color:#999;
+    text-decoration: line-through;
+}
+
+.add-to-cart{
+    width: 100%;
+    padding: 12px;
+    background: #2ecc71;
+    color:white;
+    border:none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover{
+    background-color: #27ae60;
+}
